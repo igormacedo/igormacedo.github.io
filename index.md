@@ -5,7 +5,10 @@ Esta página contém os códigos desenvolvidos para a disciplinda de PDI (2018.1
 ## Seção 2 - Exercícios
 ### Questão 1
 
+Este programa tem a função de selecionar uma determinada região e trocar os tons de cinza de forma que a região selecionada será o inverso da imagem real.
 Arquivo regions.cpp
+
+![Regions](regions.png)
 
 ```cpp
 #include <iostream>
@@ -54,7 +57,11 @@ int main(int argc, char** argv){
 
 ### Questão 2
 
+Esse programa tem a simples função de trocar os quadrantes da imagem, gerando uma imagem embaralhada de acordo com a imagem de input.
+
 Arquivo trocarregioes.cpp
+
+![trocar regiões](trocarregioes.png)
 
 ```cpp
 #include <iostream>
@@ -100,11 +107,17 @@ int main(int, char**){
 
 ### Questão 1 
 
-blabalbalablablabalablabalba
+Caso existem mais de 255 objetos para identificar na imagem, ocorrerá erro pois a forma de identificação que estamos utilizado é de colorir em tons de cinza que vão de 1 a 254 os objetos encontrados. Dessa forma é possível reconhecer individualmente cada objeto. Porém, se quisermos identificar mais de 255 objetos, podemos utlizar uma representação em ponto flutuante, para assim termos um número muito maior de possibilidades. Nesse caso, será dificil de visualizar a imagem gerada, mas o computador poderá identificar os objetos encontrados.
 
 ### Questão 2
 
+Esse programa foi desenvolvido para identificar regiões com e sem buracos. O resultado final é que, dado uma imagem de input, ele irá criar uma imagem que contém todas as regiões sem buracos numeradas de forma única (usando a coloração em tons de cinza) e uma outra imagem que contém todas as regiões com buraco (um ou mais buracos) numeradas em coloração de tons de cinza também.
+
 Arquivo labellingHoles.cpp
+
+![Original](bolhas.png)
+![Buracos detectados](labelingHolesDetected.png)
+![Regiões detectadas](labelingHolesRegions.png)
 
 ```cpp
 #include <iostream>
@@ -220,7 +233,11 @@ int main(int argc, char** argv){
 
 ### Questão 1
 
+Este program tem a função de capturar frames do video da webcam e gerar duas imagens.  A primeira imagem é o frame original e a segunda imagem é o frame com histograma equalizado pela função do OpenCV. A gente percebe que o histograma equalizado permite a melhor visualização de cores, especialmente em ambientes muito claros ou muito escuros onde o histograma original tinha valores muito concentrados em uma única região.
+
 Arquivo equalize.cpp
+
+![Equilize](equalize.png)
 
 ```cpp
 #include <iostream>
@@ -327,6 +344,8 @@ int main(int argc, char** argv){
 
 Arquivo motiondetection.cpp
 
+Este programa de motion detection utiliza o histograma como ferramenta para reconhecer movimentos na tela. Isso é possível pois o histograma deve sofre uma variação notável em sua correlação com cada frame anterior ao movimento. Assim é possivel identificar e sinalizar o movimento quando acontece.
+
 ```cpp
 #include <iostream>
 #include <stdlib.h>
@@ -414,9 +433,13 @@ int main(int argc, char** argv){
 
 ```
 
-## Seção 4 - Exercícios
+## Seção 5 - Exercícios
 
 ### Questão 1
+
+Este programa implementa uma nova função ao programa do exemplo explicado nessa seção do tutorial. Agora é implementado o laplaciano do gaussino e por isso foi preciso recalcular a matriz kernel do filtro e alterar o programa para que ele fosse implementado com essa nova função. Vemos que o laplaciano do gaussiano permite uma melhor identficação das bordas.
+
+![Comparação](lapgau.png)
 
 ```cpp
 #include <iostream>
