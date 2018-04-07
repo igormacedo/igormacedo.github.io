@@ -584,6 +584,8 @@ int main(int argvc, char** argv){
 
 Este programa implementa um filto Tilt Shift que permite deixar apenas parte da imagem em foco e o resto defocado. Ele utiliza um filtro de média 3x3 e faz uma junção da imagem filtrada com a imagem original. É possível controlar a altura, a posição e o decaimento da parte original a partir de sliders. Para iniciar o programa é preciso chamar como `./tiltshift filename`
 
+![Comparação](tiltshift.png)
+
 ```cpp
 #include <iostream>
 #include <opencv2/opencv.hpp>
