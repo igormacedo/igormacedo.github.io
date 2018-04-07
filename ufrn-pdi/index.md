@@ -682,6 +682,8 @@ int main(int argvc, char **argv)
     on_trackbar_posicao(posicao_slider, 0);
 
     waitKey(0);
+
+    imwrite( "blended.png", blended );
     return 0;
 }
 
