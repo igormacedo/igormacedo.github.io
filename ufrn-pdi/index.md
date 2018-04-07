@@ -691,7 +691,7 @@ int main(int argvc, char **argv)
 
 ### Questão 2
 
-Esse programa adiciona o efeito de Tilt Shift em um arquivo e depois disso salva o vídeo com um efeito de stop motion, pois utiliza apenas alguns frames da imagem.
+Esse programa adiciona o efeito de Tilt Shift em um arquivo e depois disso salva o vídeo com um efeito de stop motion, pois utiliza apenas alguns frames da imagem. Executar ele indicando o nome do arquivo `./stopmotion filename`
 
 ```cpp
 #include <iostream>
