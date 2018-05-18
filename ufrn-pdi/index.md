@@ -770,7 +770,7 @@ int main(int argvc, char **argv)
 
 ### Questão 1
 
-Este programa implemente o filtro homomórfico com a opção de selecionar valores para as variáveis de interesse no filtro
+Este programa implemente o filtro homomórfico com a opção de selecionar valores para as variáveis de interesse no filtro. Este filtro deve permitir bloquear certas frequencias em uma imagem de pouca luminosidade, possívelmente revelando detalhes que são pouco visíveis na imagem original.
 
 ![Original](originalfiltro.png)
 ![Com Filtro](filtro.png)
@@ -1093,6 +1093,6 @@ int main(int argc, char **argv)
 
 ### Questão 1
 
-Este programa implemente o filtro homomórfico com a opção de selecionar valores para as variáveis de interesse no filtro
+Este programa implemente o filtro homomórfico com a opção de selecionar valores para as variáveis de interesse no filtro. A imagem abaixo mostra as 10 rodadas realizadas com o algoritmo de kmeans para segmentação de cores. Este algoritmo deve escolher centros que irão definir quais as cores mais importantes da imagem e por fim, a imagem será recriada utilizando apenas um conjunto bem reduzido de cores. Se caso os centros iniciais para o algoritmo kmeans forem gerados de maneira aleatória, o resultado final para cada centro deverá ser diferente. Por isso notamos que a imagem varia entre uma rodada e outra, pois os centros estão sendo gerados de maneira aleatória e o resultado final da segmentação de cores vai diferir a cada rodada do algorítmo. A diferença, mesmo sendo pouca, é suficiente para ser notada visualmente na maioria dos casos.
 
 ![Kmeans](colorgif.gif)
